@@ -89,8 +89,11 @@ var Evadls = `
 [right][info][h2] 22:22
 [right][dialogue][p] Purée ils veulent pas que je reposte la musique
 [left][dialogue][p] Mais non
-[right][dialogue][img] assets/image/image.png
+[right][dialogue][img] assets/image/capture121.png
 [right][dialogue][p] ça me saoule
+[left][dialogue][p] dsl
+[right][dialogue][p] tktp bref tiens
+[right][dialogue][audio] assets/music/mp3/Evadls.mp3
 `
 
 var Atelle = [

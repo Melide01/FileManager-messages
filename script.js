@@ -10,9 +10,6 @@ var hideBtnL;
 var is_released = false;
 // IMPORTANT
 
-
-
-
 var trackLiElementList = [];
 
 const uidir = document.getElementById('UIdir');
@@ -51,6 +48,7 @@ function animateLoadingScreen() {
     }, 600);
 }
 
+var currentfolder = '';
 
 // Code when Page load
 document.addEventListener('DOMContentLoaded', function() {
@@ -58,18 +56,35 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Creates the Dir list
     const closeButton = document.createElement('a'); closeButton.textContent = "Fermer"; closeButton.classList.add('closeButton');
+    const autoClose = document.createElement('div'); autoClose.classList.add('UIautoclose');
+
+    autoClose.addEventListener('click', () => {
+        uidir.style.display = "none";
+    });
+
+    uidir.appendChild(autoClose);
     uidir.appendChild(closeButton);
+    
     closeButton.addEventListener('click', () => {
         uidir.style.display = "none";
     });
 
-    dirListToObj.forEach((element, index) => {
+    dirListToObj.forEach((element) => {
         const a = document.createElement('a'); a.innerHTML = '<i style="margin-right: 10px;" class="fa-regular fa-folder"></i>' + element;
         uidir.appendChild(a);
 
         a.addEventListener('click', () => {
-            loadLeftBar(trackDirInfo[element]);
+            if (trackDirInfo[element]["name"] === currentfolder) {
+                uidir.style.display = "none";
+                return
+            }
+
             uidir.style.display = "none";
+            hideLeftBar = false;
+            hideRightBar = false;
+            leftbar.style.width = "30%"; rightbar.style.width = "70%";
+            
+            loadLeftBar(trackDirInfo[element]);
         });
     });
     uidir.style.display = 'none'
@@ -97,6 +112,7 @@ var hideLeftBar = false;
 var hideRightBar = false;
 // Code that loads LeftBar en sah
 function loadLeftBar(dir) {
+    currentfolder = dir["name"]
     rightbar.innerHTML = "";
     const listToObject = Object.keys(window[dir.src]);
     const currentDir = window[dir.src];
@@ -206,13 +222,10 @@ function loadLeftBar(dir) {
 function loadConv(conv) {
     conv = window[conv]
 
-    const testImg = new RegExp(`(${'img'})`, 'i');
-    const testAudio = new RegExp(`(${'audio'})`, 'i');
-    const testVideo = new RegExp(`(${'video'})`, 'i');
-
     const rules = [
         { regex: /\[(.*)\]\[(.*)\]\[(p|h2)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2">$4</$3></div>'},
-        { regex: /\[(.*)\]\[(.*)\]\[(img|audio|video)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(img|video)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(audio)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="audio/mpeg"></$3></div>'},
     ]
 
     let output = conv;
@@ -221,5 +234,6 @@ function loadConv(conv) {
         output = output.replace(rule.regex, rule.replacement);
     }
 
+    console.log(output.trim())
     convcontainer.innerHTML = output.trim();
 }

@@ -40,6 +40,11 @@ img {
     top: 10px; right: 10px;
 }
 
+.UIautoclose {
+    width: 100%; height: 100%; position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
 
 #UIdir {
     position: fixed; width: 100%; height: 100%;
@@ -48,7 +53,7 @@ img {
     z-index: 999;
 }
 #UIdir a {
-    background-color: #000000aa; color: #fff;
+    background-color: #000000aa; color: #fff; z-index: 9;
     padding: 5px;
     display: block; margin-bottom: 10px; cursor: pointer;
     transition: all .2s ease-out;
@@ -135,7 +140,7 @@ h2 {
 }
 
 .dialogue {
-    font-size: 20px; max-width: 50%; margin: 0; margin-bottom: 10px;
+    font-size: 20px; max-width: 50%; margin: 0; margin-bottom: 5px;
     display: inline-block;
     color: #222; padding: 10px;
     background-color: #ccc; border: solid 1px #ddd;
