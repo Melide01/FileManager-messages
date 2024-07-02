@@ -234,6 +234,5 @@ function loadConv(conv) {
         output = output.replace(rule.regex, rule.replacement);
     }
 
-    console.log(output.trim())
     convcontainer.innerHTML = output.trim();
 }

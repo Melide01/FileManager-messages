@@ -14,7 +14,7 @@ const trackDirInfo = {
             "backgroundcolor": "#505"
         }
     },
-    "trash": {
+    "poubelle": {
         "name": "trashBin",
         "src": "trashList",
         "theme": {
@@ -36,14 +36,14 @@ window.trackList = {
     "Melide - A-t-elle": "Atelle",
     
     "Melide - Je Ferais Avec": "faireAvec",
-    "Melide - Compliqué pour moi": "",
-    "Melide - Du Temps": "",
+    "Melide - Compliqué pour moi": "compPourMe",
+    "Melide - Du Temps": "duTemps",
 
-    "Melide - Childhood Cliché": "",
+    "Melide - Childhood Cliché": "childClich",
     "Melide - To Make the Pain Go Away": "painGo",
     "Melide - Elle veut juste que je la laisse": "evq",
 
-    "Melide - Je Rêve Encore": "",
+    "Melide - Je Rêve Encore": "reveurToujours",
     "Melide - Thanks to Her": "thanks",
     "Melide - Dans ton Panier": "panier",
 
@@ -56,31 +56,35 @@ window.trashList = {
     "make the pain go away v.1": "",
     "dek-struction": "",
     "ptn de clope": "",
+    "on décolle": "",
+    "Vacay": "",
+    "please stay momma": "",
+    "i know you hate me too": ""
 }
 window.ouinList = {
+    "true deeper inner thoughts": "",
     "Melide - Evadls": "Evadls",
+    "mentheuse": "",
     "Melide 2am22": "",
     "every-types-of-girls": "",
+    "t à tahiti": "",
+    "On attends les vacanves": "",
+    "elle va me tuer": "",
     "Melide aita vau i ite eaha te rave": "",
     "fvgl ft. Tomy": "",
     "Jeanne cover": "",
     "La vie est étrange": "",
 }
 window.misc = {
-    "Luciole": ""
+    "Luciole": "",
+    "Projet D9": "",
+    "Plight": ""
 }
 
 
 
 
 // The actual conv data
-
-var oldEvadls = [
-    { "dir": "right", "type": "h2", "text": "John" },
-    {"dir": "left", "type": "p", "text": "“Elle veut vivre comme dans Disney”"},
-    {"dir": "left", "type": "p", "text": "BEH OUI"},
-    {"dir": "right", "type": "p", "text": "J’ai trop bien capté le personnage 🤭"}
-]
 var Evadls = `
 [right][info][h2] John
 [left][dialogue][p] "Elle veut vivre comme dans Disney"
@@ -96,82 +100,201 @@ var Evadls = `
 [right][dialogue][audio] assets/music/mp3/Evadls.mp3
 `
 
-var Atelle = [
-    { "dir": "right", "type": "h2", "text": "John" },
-    { "dir": "right", "type": "p", "text": "je viens de faire une musique pour mon prochain album et javais envie de le clipper avec une meuf hyper belle" },
-    { "dir": "right", "type": "p", "text": "j’ai direct pensé à toi" },
-    { "dir": "left", "type": "p", "text": "Nimporte quoi toi" },
-    { "dir": "left", "type": "p", "text": "John c'est adorable ce que tu me dit mais je peut pas faire sa si on ce voit pas 😔" },
-    { "dir": "right", "type": "p", "text": "Bah oui cest ce que je me suis dis à la fin 😔" },
-    {"dir": "right", "type": "p", "text": "En sah j’arrive" },
-    { "dir": "left", "type": "p", "text": "Oui vien stp" },
-    { "dir": "left", "type": "p", "text": "Je veux te voir" },
-    // { "dir": "left", "type": "img", "src": "assets/image/image.png" },
-    
-]
+var Atelle = `
+[right][info][h2] John
+[left][dialogue][p] Je sais pas si tu te souviens mais notre premier sujet de conversation
+[left][dialogue][p] C'était les écritures
+[right][dialogue][p] Purée oui
+[left][dialogue][p] Du coup tu jugeais mon écriture
+[left][dialogue][p] et t'as jugé mon amplie aussi
+[right][dialogue][p] PTDR OUI
+[left][dialogue][p] Et tu me faisais des ptites chansons
+[left][dialogue][p] ça c'etait adorable
 
-var MrRedman = [
-    {"dir": "right", "type": "p", "text": "Bonjour, Je m’appelle [...], j’étais un ancien élève au collège de [...]. J’ai arrêté ma scolarité en 3ème pendant la période 2017 - 2018. J’aimerais récupérer mon EXEAT, si vous l’avez, dans les prochaines semaines si possible. Je vous remercie d’avance et passez une très bonne journée!"},
-    {"dir": "left", "type": "p", "text": "Bonjour, L'exéat se trouve dans votre dossier d'inscription pour le lycée. Veuillez donc vous rapprocher de votre lycée d'affectation. Bonne journée "},
-    {"dir": "left", "type": "p", "text": "Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,"},
-    {"dir": "center", "type": "h2", "text": "En gros allez vous faire foutre quoi"},
-    {"dir": "left", "type": "h2", "text": "Vous avez reçu 1 message de Maman"}
-]
+[left][dialogue][img] assets/image/connor.jpg
 
-var painGo = [
-    {"dir": "center", "type": "h2", "text": "11h26"},
-    {"dir": "right", "type": "h2", "text": "John"},
-    {"dir": "left", "type": "p", "text": "Heyyy.."},
-    {"dir": "left", "type": "p", "text": "Jvais me sentir mal de dire ça mais ça te dérange si on se sépare et qu'on devienne amis 🥲"},
-    {"dir": "left", "type": "p", "text": "Jsuis desoler"},
-    {"dir": "left", "type": "p", "text": "Pardon"},
-    {"dir": "right", "type": "p", "text": "Si c’est ce que tu veux je peux pas te forcer autrement"},
-    {"dir": "right", "type": "p", "text": "Tu ne m’aimes plus?"},
-    {"dir": "center", "type": "h2", "text": "4h28"},
-    {"dir": "left", "type": "p", "text": "Cc, cest pour te prévenir que ta chérie est partie.."},
-    {"dir": "right", "type": "p", "text": "Attends quoi?"},
-    {"dir": "center", "type": "h2", "text": "You have been blocked"}
-]
+[right][dialogue][p] En vrai date à jouer à Detroit Become Human c'est pas si mal quand j'y pense
+[left][dialogue][p] C'est vraiment incroyable
+[left][dialogue][p] C'est mon jeux a choix prèf
+[right][dialogue][p] T'as de bon goût jusqu'à la fin toi
+[left][dialogue][p] Ouii
+[right][dialogue][p] je viens de faire une musique pour mon prochain album et j'avais envie de le clipper avec une meuf hyper belle
+[right][dialogue][p] j'ai direct pensé à toi
+[left][dialogue][p] Nimporte quoi toi
+[left][dialogue][p] John c'est adorable ce que tu me dis mais je peut pas faire sa si on ce voit pas :(
+[right][dialogue][p] Bah oui c'st ce que je me suis dis à la fin :(
+[right][dialogue][p] en sah j'arrive
+[left][dialogue][p] Oui vien stp
+[left][dialogue][p] Je veux te voir
+`
 
-var evq = [
-    {"dir": "right", "type": "h2", "text": "John"},
-    {"dir": "right", "type": "p", "text": "Jreviens souvent voir nos conv pour soit rigoler soit me rappeler nos moments ensemble"},
-    {"dir": "right", "type": "p", "text": "Jsais que toi c’est pas pareil mais tu es vraiment quelqu’un d’important dans ma vie ❤"},
-    {"dir": "left", "type": "p", "text": "C’est juste que comme tu le sais c’est compliqué pour moi mais je tien a toi john énormément"},
-    {"dir": "right", "type": "p", "text": "J’oublie pas ça et je t’en voudrais jamais que ce soit compliqué pour toi, je suis vraiment heureux de te connaître l’oublie jamais ❤"},
-    {"dir": "right", "type": "p", "text": "Merci infiniment pour tout"},
-]
+var MrRedman = `
+[left][info][h2] Maman
+[left][dialogue][p] Envoie un mail au collège pour récuperer ton éxeats, ca pourrait servir
+[right][dialogue][p] Daccord maman, je t'aime <3
+[center][info][h2] 9:13
+[right][dialogue][p] Bonjour, Je m’appelle [...], j’étais un ancien élève au collège de [...]. J’ai arrêté ma scolarité en 3ème pendant la période 2017 - 2018. J’aimerais récupérer mon EXEAT, si vous l’avez, dans les prochaines semaines si possible. Je vous remercie d’avance et passez une très bonne journée!
+[left][dialogue][p] Bonjour, L'exéat se trouve dans votre dossier d'inscription pour le lycée. Veuillez donc vous rapprocher de votre lycée d'affectation. Bonne journée
+[left][dialogue][p] Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,
+[center][info][h2] En gros allez vous faire foutre quoi
+[left][info][h2] Vous avez reçu 1 message de Maman
+`
 
-var thanks = [
-    {"dir": "right", "type": "h2", "text": "John"},
-    {"dir": "left", "type": "p", "text": "J'ai un problème"},
-    {"dir": "left", "type": "p", "text": "Comment ne plus être dans une situation de dépendance affective ???"},
-    {"dir": "left", "type": "p", "text": "Enft je l'aime bcp bcp et je peux plus me passer de lui à un point où c'est peut être pas très healthy, je veux pas que ça l'étouffe"},
-    {"dir": "right", "type": "p", "text": "En vrai"},
-    {"dir": "right", "type": "p", "text": "C’est sûrement ta première relation ou l’une de tes premières relation donc profite juste"},
-    {"dir": "right", "type": "p", "text": "Ai pas peur d’être collante ou canarde"},
-    {"dir": "right", "type": "p", "text": "C’est beau qu’il te manque"},
-    {"dir": "right", "type": "p", "text": "Jveux te voir heureuse"}
-]
+var painGo = `
+[center][info][h2] 11h26
+[right][info][h2] John
+[left][dialogue][p] Heyyy..
+[left][dialogue][p] Jvais me sentir mal de dire ça mais ça te dérange si on se sépare et qu'on devienne amis
+[left][dialogue][p] Jsuis desoler
+[left][dialogue][p] Pardon
+[right][dialogue][p] Si c'est ce que tu veux je peux pas te forcer autrement
+[right][dialogue][p] Tu ne m'aimes plus?
+[center][info][h2] 4h28
+[left][dialogue][p] Cc, c'est pour te prévenir que ta chérie est partie..
+[right][dialogue][p] Attends quoi?
+[cenfer][info][h2] You have been blocked
+`
 
-var panier = [
-    {"dir": "center", "type": "h2", "text": "Cette conversation est fictive, mais reflète des faits réels"},
-    {"dir": "right", "type": "p", "text": "Cc biche, tas ecouter le son?"},
-    {"dir": "left", "type": "p", "text": "c bien"},
-    {"dir": "right", "type": "p", "text": "cool"},
-    {"dir": "right", "type": "p", "text": "en vrai je me suis un peu inspiré de toi pour la faire"},
-    {"dir": "left", "type": "p", "text": "c bien"},
-    {"dir": "right", "type": "p", "text": "on se voit taleur"},
-    {"dir": "left", "type": "h2", "text": "Vous avez manquer 5 appels"},
-]
+var evq = `
+[right][info][p] John
+[right][dialogue][p] Jreviens souvent voir nos conv pour soit rigoler soit me rappeler nos moments ensemble
+[right][dialogue][p] Jsais que toi c'est pas pareil mais tu es vraiment quelqu'un d'important dans ma vie <3
+[left][dialogue][p] C'est juste que comme tu le sais c'est compliqué pour moi mais je tien a toi john énormément
+[right][dialogue][p] J'oublie pas ça et je t'en voudrais jamais que ce soit compliqué pour toi, je suis vraiment heureux de te connaître l'oublie jamais
+[left][dialogue][p] Merci infiniment pour tout
+`
 
-var faireAvec = [
-    {"dir": "right", "type": "h2", "text": "John"},
-    {"dir": "left", "type": "p", "text": "T’es pas cringe !! Tu t’assumes de plus en plus et c’est vraiment beau à voir 🫶"},
-    {"dir": "left", "type": "p", "text": "Coucou !! Joyeux anniversaire !! Mais fait gaffe parce que tu risques de te transformer en un petit croûton si tu continues comme ça 🤭"},
-    {"dir": "right", "type": "p", "text": "Merci infiniment omggg, et tkt petit croûton ou pas jv viser le bonheur coûte que coûte 🫶✨"},
-    {"dir": "right", "type": "p", "text": "J'arriverai pas à te le dire dans la vrai conv"},
-    {"dir": "right", "type": "p", "text": "mais je suis vrm désolé pour tout ce que je tai fait ressentir"},
-    {"dir": "right", "type": "p", "text": "tes honnetement la personne avec qui jaurai un lien tres fort malgré moi"},
-    {"dir": "right", "type": "p", "text": "jveux pardonner mon passé avec mes anciens medocs"},
-]
+var thanks = `
+[right][info][h2] John
+[left][dialogue][p] J'ai un problème
+[left][dialogue][p] Comment ne plus être dans une situation de dépendance affective???
+[left][dialogue][p] Enft je l'aime bcp bcp et je peux plus me passer de lui à un point où c'est peut être pas très healthy, je veux pas que ça l'étouffe
+[right][dialogue][p] En vrai
+[right][dialogue][p] C'est sûrement ta première relation ou l'une de tes premières relation donc profite juste
+[right][dialogue][p] Ai pas peur d'être collante ou canarde
+[right][dialogue][p] C'est beau qu'il te manque
+[right][dialogue][p] Jveux te voir heureuse
+`
+
+var panier = `
+[center][info][h2] Cette conversation est fictive, mais reflète des faits réels
+[right][info][h2] John
+[right][dialogue][p] Cc biche, t'as ecouter le son?
+[left][dialogue][p] c bien
+[right][dialogue][p] cool
+[right][dialogue][p] en vrai je me suis un peu inspiré de toi pour le faire
+[left][dialogue][p] c bien
+[right][dialogue][p] on se voit taleur
+[left][info][h2] Vous avez manquer 5 appels de la personne
+[right][dialogue][img] assets/image/huh_cat.jpg
+`
+
+var faireAvec = `
+[right][info][h2] John
+[right][dialogue][img] assets/image/jonh1.png
+[right][dialogue][p] cringe
+[left][dialogue][p] T'es pas cringe !! Tu t'assumes de plus en plus et c'est vraiment beau à voir 﫶
+
+[center][info][h2] 25 Fev 2023
+
+[left][dialogue][p] Coucou !! Joyeux anniversaire !! Mais fait gaffe parce que tu risques de te transformer en petit croûton si tu continues comme ça <3
+[right][dialogue][p] Merci infiniment omggg, et tkt petit croûton ou pas jv viser le bonheur coûte que coûte <3
+[right][dialogue][p] J'arriverais pas à te le dire dans la vrai conv
+[right][dialogue][p] mais je suis vrm désolé pour tout ce que je t'ai fait
+[right][dialogue][p] T'es hônnetement la personne avec qui jaurai un lien très fort malgré moi
+[right][dialogue][p] Tu es formidable
+[right][dialogue][p] J'veux pardonner mon passé, celui avec mes anciens médocs
+`
+
+var duTemps = `
+[center][info][h2] Cette conversation s'est déroulé à l'oral
+[right][info][h2] John
+[right][dialogue][p] En vrai je sais vraiment pas quoi faire comme boulot
+[left][dialogue][img] assets/image/catquestion.jpg
+[left][dialogue][p] Arrête
+[left][dialogue][p] Tu veux rien faire de ta vie 
+[right][dialogue][p] Si je veux faire de la musique 
+[right][dialogue][p] des déssins
+[right][dialogue][p] écrire des histoires ou faire des programmes
+[left][dialogue][p] Tu veux pas plutôt faire de la cuisine?
+[left][dialogue][p] Faire de bon plat dans les restaurant
+[right][dialogue][p] Ah ouais
+[right][dialogue][p] concevoir des plats aussi? Ca me tente
+[left][dialogue][p] Non, juste faire les plats
+[right][dialogue][p] ah
+[right][dialogue][img] assets/image/huh_cat.jpg
+[right][info][h2] je suis bébête
+`
+
+var compPourMe = `
+[right][info][h2] John
+`
+
+var childClich = `
+[left][info][h2] her<3
+[left][dialogue][p] yay
+[left][dialogue][p] lub u
+[left][dialogue][p] chipi chipi
+[right][dialogue][p] lub uuuuu too
+[left][dialogue][p] chapa chapa
+[left][dialogue][p] dubi dubi
+[right][dialogue][p] DABA DANA
+[right][dialogue][p] MAGICO MI
+[right][dialogue][p] DUBI DUBI BOOM
+[left][dialogue][p] i just wanna be your sigma
+[right][dialogue][p] Youre so skibidiii
+[right][dialogue][p] ur already my sigma
+[right][dialogue][p] my skibidi
+[left][dialogue][p] oh yeah?
+[left][dialogue][p] mwah
+[center][info][h2] later
+[left][dialogue][p] OMG HIIIIII
+[left][dialogue][p] MARRICA YAAAAAA
+[right][dialogue][p] HELLOOOO
+[right][dialogue][p] HALLO
+[right][dialogue][p] HALLOo
+[left][dialogue][p] HALLOOO
+[right][dialogue][p] HALLo
+[center][info][h2] after a while
+[right][dialogue][p] ok ok
+[right][dialogue][p] mwa mwa
+[right][dialogue][p] take care sweetheart
+[right][dialogue][p] hope you get your genshin impact waifus
+[right][dialogue][p] have a nice daaaay <33
+[right][dialogue][p] thankuuuuuuuuuuuuu
+[left][dialogue][p] i love you
+`
+
+var reveurToujours = `
+[right][info][h2] Melide
+
+[center][info][h2] 2023
+[center][info][p] sortie du premier clip Tout doux, démons en plein stage loin de ma maison
+[right][dialogue][img] assets/image/toutdoux.png
+
+[center][info][h2] 2022
+[center][info][p] sortie de Est-elle un banger unanime
+[right][dialogue][img] assets/image/estelle.png
+
+[center][info][h2] 2020
+[left][dialogue][img] assets/image/newolympia.png
+[left][dialogue][p] Congratulations on taking second place in the challenge! It was really close!
+[right][dialogue][p] I'm glad to win second place! Thank you for everything! :)
+
+[right][info][h2] En vrai j'avais le seum d'être deuxième
+
+[center][info][h2] 2020
+[right][dialogue][p] Salut! Je voudrai être candidat pour Twitch à un incroyable talent.
+[right][dialogue][p] Je suis Melide, je suis auteur interprète producer, et j'aurais envie de partager ma passion du chant à la guitare.
+[right][dialogue][p] Par contre, je ne suis pas trop d'accord avec le fait de me montrer en caméra, je ne suis pas du tout à l'aise en cam mais j'ai moins de mal sans caméra
+[right][dialogue][p] Je ne sais pas si il y a d'autres informations à fournir, si jamais il y a besoin de quoi que se soit je suis toujours disponible ^^ Bonne journée/soirée ! 
+[left][dialogue][p] Pas de soucis pour la caméra, on te fera passer qu’en vocal dans ce cas là!
+
+[center][info][h2] devenu champion cringeos et c'est comme ça qu'est né la musique CatnipTv
+
+[center][info][h2] 2020
+[right][dialogue][p] Tout le début jusqu’à 0:59 c’est à toi<br><br>Ma partie est à partir de 1:28<br><br>Et si tu peux caler un truc stylé à 2:42 ce serait ultra chouette 😱
+[left][dialogue][p] lourd faut j'écoute ça, avant faut je te parle de mes aventures avec le lovens
+[center][info][h2] puis snaf et moi on a sortis Larme Noire
+[right][dialogue][img] assets/image/larmenoir.png
+`
