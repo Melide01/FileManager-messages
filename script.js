@@ -224,8 +224,9 @@ function loadConv(conv) {
 
     const rules = [
         { regex: /\[(.*)\]\[(.*)\]\[(p|h2)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2">$4</$3></div>'},
-        { regex: /\[(.*)\]\[(.*)\]\[(img|video)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
-        { regex: /\[(.*)\]\[(.*)\]\[(audio)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="audio/mpeg"></$3></div>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(img)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(video)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mp4"></$3></div>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(audio)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mpeg"></$3></div>'},
     ]
 
     let output = conv;

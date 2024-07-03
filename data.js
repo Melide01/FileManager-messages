@@ -47,9 +47,9 @@ window.trackList = {
     "Melide - Thanks to Her": "thanks",
     "Melide - Dans ton Panier": "panier",
 
-    "Melide - J'ai plus d'espace": "",
-    "Melide - Baby, qu'est ce que t'es": "",
-    "Melide - Sorcellerie": "",
+    "Melide - J'ai plus d'espace": "plusEspace",
+    "Melide - Baby, qu'est ce que t'es": "babyKsk",
+    "Melide - Sorcellerie": "sorcellerie",
 }
 window.trashList = {
     "je ferais avec trash": "",
@@ -98,7 +98,7 @@ var Evadls = `
 [left][dialogue][p] dsl
 [right][dialogue][p] tktp bref tiens
 [right][dialogue][audio] assets/music/mp3/Evadls.mp3
-`
+`;
 
 var Atelle = `
 [right][info][h2] John
@@ -126,7 +126,7 @@ var Atelle = `
 [right][dialogue][p] en sah j'arrive
 [left][dialogue][p] Oui vien stp
 [left][dialogue][p] Je veux te voir
-`
+`;
 
 var MrRedman = `
 [left][info][h2] Maman
@@ -138,7 +138,7 @@ var MrRedman = `
 [left][dialogue][p] Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,
 [center][info][h2] En gros allez vous faire foutre quoi
 [left][info][h2] Vous avez reçu 1 message de Maman
-`
+`;
 
 var painGo = `
 [center][info][h2] 11h26
@@ -153,7 +153,7 @@ var painGo = `
 [left][dialogue][p] Cc, c'est pour te prévenir que ta chérie est partie..
 [right][dialogue][p] Attends quoi?
 [cenfer][info][h2] You have been blocked
-`
+`;
 
 var evq = `
 [right][info][p] John
@@ -162,10 +162,13 @@ var evq = `
 [left][dialogue][p] C'est juste que comme tu le sais c'est compliqué pour moi mais je tien a toi john énormément
 [right][dialogue][p] J'oublie pas ça et je t'en voudrais jamais que ce soit compliqué pour toi, je suis vraiment heureux de te connaître l'oublie jamais
 [left][dialogue][p] Merci infiniment pour tout
-`
+`;
 
 var thanks = `
 [right][info][h2] John
+
+[right][dialogue][img] assets/image/chiaki.JPG
+
 [left][dialogue][p] J'ai un problème
 [left][dialogue][p] Comment ne plus être dans une situation de dépendance affective???
 [left][dialogue][p] Enft je l'aime bcp bcp et je peux plus me passer de lui à un point où c'est peut être pas très healthy, je veux pas que ça l'étouffe
@@ -174,7 +177,10 @@ var thanks = `
 [right][dialogue][p] Ai pas peur d'être collante ou canarde
 [right][dialogue][p] C'est beau qu'il te manque
 [right][dialogue][p] Jveux te voir heureuse
-`
+[left][dialogue][p] MERCI T TROP GENTIL 💕💕🎀🎀🎀🎀🎀💮💮💮💮💗🌹🌹🌹
+
+[left][dialogue][img] assets/image/coeurcoeur.JPG
+`;
 
 var panier = `
 [center][info][h2] Cette conversation est fictive, mais reflète des faits réels
@@ -187,7 +193,7 @@ var panier = `
 [right][dialogue][p] on se voit taleur
 [left][info][h2] Vous avez manquer 5 appels de la personne
 [right][dialogue][img] assets/image/huh_cat.jpg
-`
+`;
 
 var faireAvec = `
 [right][info][h2] John
@@ -204,7 +210,7 @@ var faireAvec = `
 [right][dialogue][p] T'es hônnetement la personne avec qui jaurai un lien très fort malgré moi
 [right][dialogue][p] Tu es formidable
 [right][dialogue][p] J'veux pardonner mon passé, celui avec mes anciens médocs
-`
+`;
 
 var duTemps = `
 [center][info][h2] Cette conversation s'est déroulé à l'oral
@@ -224,14 +230,37 @@ var duTemps = `
 [right][dialogue][p] ah
 [right][dialogue][img] assets/image/huh_cat.jpg
 [right][info][h2] je suis bébête
-`
+`;
 
 var compPourMe = `
 [right][info][h2] John
-`
+
+[left][dialogue][img] assets/image/coeurverset.JPG
+[right][dialogue][p] J'espère fortement ❤️❤️
+[left][dialogue][p] Le mien et entrain de se détruire un peu 😅❤️❤️
+[right][dialogue][p] Oui mais je parlais aussi de toi et moi 👉👈❤️
+[left][dialogue][p] Ouii mais nous deux ça dure depuis longtemps toujours ❤️❤️
+[right][dialogue][p] Toi et lui ça doit pas être facile ça fait un moment que c dure jai l'impression🥺❤️
+[left][dialogue][p] Bah en mode ont c’est vu y’a pas longtemps pas ce week end là mais l’autre d’avant <br> Et quand il et repartie depuis le dimanche 18h j’ai pas de nouvelle.. <br>après la situation et hyper compliqué et tout et il et vraiment pas bien mais bon ❤️❤️🙂
+[right][dialogue][p] D'accord 👉👈❤️
+[center][info][h2] plus tard
+[left][dialogue][p] il m'a tromper il m'a humilier il m'a manipuler
+[left][dialogue][p] iil m'a traiter d'ordure
+[left][dialogue][p] que au moin lui avais une dignité
+[right][dialogue][p] c'est horrible
+[left][dialogue][p] C'est pour ça que je suis mal
+[right][dialogue][p] Tktp je suis là ça va aller
+[left][dialogue][p] Merci mon chat
+[left][dialogue][p] Je t’aime fort 🥹
+
+[left][dialogue][video] assets/video/faite pareil.mp4
+`;
 
 var childClich = `
 [left][info][h2] her<3
+[left][dialogue][img] assets/image/fairycar.png
+[right][dialogue][img] assets/image/hehecar.png
+
 [left][dialogue][p] yay
 [left][dialogue][p] lub u
 [left][dialogue][p] chipi chipi
@@ -263,7 +292,7 @@ var childClich = `
 [right][dialogue][p] have a nice daaaay <33
 [right][dialogue][p] thankuuuuuuuuuuuuu
 [left][dialogue][p] i love you
-`
+`;
 
 var reveurToujours = `
 [right][info][h2] Melide
@@ -272,9 +301,18 @@ var reveurToujours = `
 [center][info][p] sortie du premier clip Tout doux, démons en plein stage loin de ma maison
 [right][dialogue][img] assets/image/toutdoux.png
 
+[center][info][h2] 2023
+[left][dialogue][p] Mec j'étais sur le point de m'endormir et dans mes pensées je me suis dit ptn on c'est vue 4 fois une première fois une journée " t'avais fait ma prod pixel " la deuxième fois " ou on c'était vue un petite aprem ( t'avais coupé tes cheveux et moi aussi )et j'avais eu la rage c'était trop court une troisième fois où tes rester dormir 3 jours je crois et on est allé à la fête foraine et une quatrième fois où tes venue , on a beaucoup marché et à la fin tu devais rentrer mais ta raté ton bateaux donc ta dormi avec moi noah et vt ( tes parti le lendemain) et d'ailleurs je crois que t'avais péter ton tel et ta mère m'avait dm pour me demander ou t'étais et j'avais tenté de la rassurer vu que je savais que tu venais de prendre le bateaux et y avait une fête dans le parc paofai,  bref mec je te jure que je garde de tahiti des trés bon souvenir grâce à 3 chose quasiment : les soirées pyjama avec les autres, les campings, et toi ( sa sonne gay) bref il est 1h du mat mais fallait que je le dise
+[right][dialogue][p] Mec vrm je repense souvent à ça ! Personnellement notre rencontre ça m’as fait grandir car vraiment je ne voyais personne et la première fois que je revois quelqu’un ça se passe ultra bien vraiment ça m’as redonné un espoir de pouvoir sociabilisé ! Vraiment je suis ptn de trop heureux que nos chemins se sont croisés et je veux trop qu’on aille loin ensemble 💪
+
 [center][info][h2] 2022
 [center][info][p] sortie de Est-elle un banger unanime
 [right][dialogue][img] assets/image/estelle.png
+
+[center][info][h2] 2021
+[right][dialogue][video] assets/video/jereveplus-instru.mp4
+[right][dialogue][p] Y a cette version aussi que personne n'a jamais vu
+[right][dialogue][video] assets/video/jereveplus-alt.mp4
 
 [center][info][h2] 2020
 [left][dialogue][img] assets/image/newolympia.png
@@ -297,4 +335,89 @@ var reveurToujours = `
 [left][dialogue][p] lourd faut j'écoute ça, avant faut je te parle de mes aventures avec le lovens
 [center][info][h2] puis snaf et moi on a sortis Larme Noire
 [right][dialogue][img] assets/image/larmenoir.png
-`
+
+<center><info><h2> Et aujourd'hui, 2024, on sort Photo Souvenir
+`;
+
+var plusEspace = `
+[right][info][h2] John
+[center][info][h2] 2022
+
+[right][dialogue][img] assets/image/stockage.JPG
+
+[right][dialogue][p] Mon iPad continue de crashed
+[right][dialogue][p] Mais je suis tellement un génie que j'arrive à contourner le crash :D
+[right][dialogue][p] Ils programme vrm leur os avec de la pisse
+[right][dialogue][p] Ils mettemt un plafond artificiel en dessous de ton espace actuel
+[right][dialogue][p] Du coup le chiffre peut fluctuer de 10Go de difference
+[right][dialogue][p] Et les mobile dépendent du stockage donc jsuis dans la merde
+[left][dialogue][p] Après ils font expres de programmer leurs appareils pr qu'ils déconnent au bout de qlq années aussi
+[left][dialogue][p] Mais g pas compris genre si t'as plus d'espace tu accèdes plus à l'ipad tu peux mm pas faire de l'espace en fait
+[left][dialogue][p] Mdrr go prendre un 128 go pour être tranquille
+[right][dialogue][p] ils ont bien reussi leur strategie marketing ses fdp
+[right][dialogue][p] si jamais t'es bloquer comme ça j'ai une astuce
+[right][dialogue][p] ouvre tes notifs au lieu de faire ton mot de passe
+[right][dialogue][p] Tu cliques sur une notif si t'as le bonheur d'en avoir une
+[right][dialogue][p] Il te propose de faire le mot de passe tu le fais et ça t'ouvres l'application au lieu de l'écran d'acceuil vu que c'est lui qui fait crash
+
+[center][info][h2] 2024
+
+[right][dialogue][p] Je veux trop te faire des vocs pour t'expliquer 
+[right][dialogue][p] Mais j'ai plus d'espace avec la musique
+[right][dialogue][p] Une musique ça prend 250mo minimum
+[left][dialogue][p] Omg c'est galère l'espace en vrai
+[right][dialogue][p] ( heuresement icloud existe )
+[right][dialogue][p] Je vais essayer de faire trois dernier sons pour l'album puis je reinstalle insta
+
+[left][dialogue][audio] assets/music/elovoc-1.mp3
+[left][dialogue][audio] assets/music/elovoc-2.mp3
+
+[right][dialogue][p] vsy faut que j'ai des idées pour les 3 derniers
+[right][dialogue][p] OUI DEPUIS DES ANNÉES J'AI UN ESPACE SATURÉ BAHAHAHAHHAHAHAHAHAH
+[left][dialogue][p] 🤣🤣🤣
+`;
+
+var babyKsk = `
+[right][info][h2] John
+[left][dialogue][img] assets/image/lui&moi.jpg
+[right][dialogue][p] <3..
+[left][dialogue][p] Tu sais très bien que t'es aussi important pour moi..
+[left][dialogue][p] On en a déjà parler
+[left][dialogue][p] Il est là mais toi aussi
+[right][dialogue][p] J'ai toujours un peu de jalousie dsl <3
+[right][dialogue][p] Je t'imagines encore avec lui <3
+[left][dialogue][p] T'excuse pas c'est rien j'y suis aussi moi et là photo elle date avec C'st compliqué en ce moment
+[right][dialogue][p] Tkt pas <3
+`;
+
+var sorcellerie = `
+[right][info][h2] John
+
+[left][dialogue][img] assets/image/us-spiderman.jpg
+
+[left][dialogue][p] Can it be real? don't want to just imagine it i wanna be with you
+[right][dialogue][p] be my crazy girlfriend please
+[right][dialogue][p] it has to be real we will be together
+[left][dialogue][p] happy to hear that
+[left][dialogue][p] i'll be yours
+[left][dialogue][p] and i love you
+
+[left][dialogue][p] HEHE
+[right][dialogue][p] Im coming
+[left][dialogue][p] You cumming? :)
+[right][dialogue][p] Where do you want me to cum?
+[left][dialogue][p] On me
+[left][dialogue][p] Of course
+[left][dialogue][p] Like
+[left][dialogue][p] I'll be sad otherwise
+[right][dialogue][p] *I kinda asked on about ig or discord but Im still into it*
+[left][dialogue][p] Well
+
+[left][dialogue][img] assets/image/side-eye.jpg
+
+[right][dialogue][p] I kinda like breaking the rules with you
+[left][dialogue][p] i like that too
+[left][dialogue][p] Don't mind cause it's you
+[right][dialogue][p] good girl
+[left][dialogue][p] THAT'S CHEATING
+`;
