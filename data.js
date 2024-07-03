@@ -51,34 +51,37 @@ window.trackList = {
     "Melide - Baby, qu'est ce que t'es": "babyKsk",
     "Melide - Sorcellerie": "sorcellerie",
 }
+window.ouinList = {
+    "true deeper inner thoughts": "deeperInner",
+    "Melide - Evadls": "Evadls",
+    "Melide 2am22": "deux22",
+    "every-types-of-girls": "everyGirls",
+    "t à tahiti": "teataiti",
+    "On attends les vacanves": "vacance",
+    "on décolle": "onDeco",
+    "noradrénaline": "nora",
+    "Melide aita vau i ite eaha te rave": "tahitien1",
+    "fvgl ft. Tomy": "fvgl",
+    "Jeanne cover": "jeanneCov",
+    "after him": "afterHim"
+    
+}
 window.trashList = {
-    "je ferais avec trash": "",
+    "je ferais avec trash": "jeFeraisAlt",
     "make the pain go away v.1": "",
-    "dek-struction": "",
-    "ptn de clope": "",
-    "on décolle": "",
+    "La vie est étrange": "laVie",
+    "dek-struction": "dekStrux",
+    "ptn de clope": "ptnClope",
+
     "Vacay": "",
     "please stay momma": "",
     "i know you hate me too": ""
 }
-window.ouinList = {
-    "true deeper inner thoughts": "",
-    "Melide - Evadls": "Evadls",
-    "mentheuse": "",
-    "Melide 2am22": "",
-    "every-types-of-girls": "",
-    "t à tahiti": "",
-    "On attends les vacanves": "",
-    "elle va me tuer": "",
-    "Melide aita vau i ite eaha te rave": "",
-    "fvgl ft. Tomy": "",
-    "Jeanne cover": "",
-    "La vie est étrange": "",
-}
 window.misc = {
     "Luciole": "",
     "Projet D9": "",
-    "Plight": ""
+    "Plight": "",
+    "Project T": ""
 }
 
 
@@ -420,4 +423,212 @@ var sorcellerie = `
 [left][dialogue][p] Don't mind cause it's you
 [right][dialogue][p] good girl
 [left][dialogue][p] THAT'S CHEATING
+`;
+
+
+var jeanneCov = `
+[right][info][h2] Coucou
+[right][dialogue][p] j'ai toujours kiffer les vielles music
+[right][dialogue][p] Hotel california, Pour some sugar on me et tralali en anglais
+[right][dialogue][p] en francais jai grandit avec Lorie (ensorcelée)
+[right][dialogue][p] Mais bizaremment jai retrouver cette musique de Laurent Voulzy qui m'a marquer
+[right][dialogue][img] assets/image/laurentvoulzy.png
+[right][dialogue][p] Je devais en faire une reprise
+[right][dialogue][p] Jai pas pu la mettre dans l'album donc je le met la
+[right][dialogue][audio] assets/music/mp3/impossible/jeanne-cover.mp3
+[right][dialogue][a] https://youtu.be/0bnZhBrcyzo?si=WCsFPSv6tESa4cKDp
+`;
+
+var fvgl = `
+[right][info][h2] John
+[right][dialogue][p] Jtenvoie le lien <3
+[right][dialogue][p] sur discord
+[right][dialogue][p] ou jsp
+[right][dialogue][p] dinguerie cque tu fais
+[right][dialogue][p] jte suce
+[left][dialogue][p] tes aller a lecole ou tes pas aller a lecole
+[left][dialogue][p] vsy jv vrm essayer fvg
+[left][dialogue][p] jespere juste que jaurai une version avec ta partie fini
+[left][dialogue][p] si tas open envoie
+[center][info][h2] One eternity later 
+[left][dialogue][p] Melhin?
+[left][dialogue][p] Renvoi le son stp :,D
+[center][info][h2] One thousand years later
+[right][dialogue][p] Tiens sorry du retard jai fait ca
+[right][dialogue][audio] assets/music/mp3/impossible/fvgl-ft-tomy.mp3
+[left][dialogue][p] Mais c'est pas vrai t'es vivant
+[left][dialogue][p] auft lourd le mix
+[left][dialogue][p] Dsl j’avais prévu de bosser pour fgv comme j’fais plus rien sauf que au final j’ai fais ça
+[left][dialogue][a] https://soundcloud.com/denjivsslayy/last-birthday
+[left][dialogue][a] https://soundcloud.com/denjivsslayy/oyasumi-platforms-version
+[left][dialogue][a] https://soundcloud.com/denjivsslayy/0-passions-jsuis-lmechant-quon-deteste-dans-les-films
+[left][dialogue][a] https://soundcloud.com/denjivsslayy/jcrois-jai-des-ecailles-et-jpense-avoir-des-cornes-aussi-jsuis-lmec-mort-quon-loot
+[left][dialogue][p] Donc j’pense faudra attendre pour fgv 😂😂
+[center][info][h2] The world has ended two times when John has sent this message
+[right][dialogue][p] Salut je suis ton ex toxique préféré qui revient sans prevenir
+[right][dialogue][p] on fait Fvg?
+[left][dialogue][p] J’fais pas de musique en ce moment 😔
+[left][dialogue][p] Redonne moi mes passions et donne-moi de l’inspi
+[right][dialogue][p] prend du repos, mais des que t'as envie de tout niquer jai interet detre present!
+[left][dialogue][p] C’est a toi de voir ça 😂
+[center][info][h2] il avait raison
+[center][info][h2] mais peut etre un jour fvg sera poster je le veux 
+`;
+
+var teataiti = `
+[right][dialogue][p] Enfaite j'ai juste vu mon ancienne crush de primaire en prenant le bus
+[right][dialogue][p] Cetait trop bizarre
+[right][dialogue][p] mon coeur genre il a sauter un battement
+[right][dialogue][p] de voir ton crush denfance toute grandit c'est incrr
+[right][dialogue][audio] assets/music/mp3/impossible/teataiti.mp3
+`;
+
+var deeperInner = `
+[right][dialogue][p] Si vous le saviez pas
+[right][dialogue][p] ( même si cest dur de ne pas le savoir avec moi )
+[right][dialogue][p] Jai un tres mauvais rapport avec moi, mon image et qui je suis en général
+[right][dialogue][p] fallait forcement que je le mette en musique
+[right][dialogue][audio] assets/music/mp3/impossible/deeper inner thoughts.mp3
+[right][dialogue][p] Update : J'essaie d'y remédier et ça avance bien <3
+`;
+
+var deux22 = `
+[right][dialogue][p] Ca devait être la suite de 1h11
+[right][dialogue][p] mais en anglais
+[right][dialogue][p] jai pas pu poser sur linstru bien que je laime bien
+[right][dialogue][p] puis y a pas une grosse hype autour de 1h11
+[right][dialogue][p] Bien que moi jai une grosse hype autour de ce son
+[right][dialogue][p] Est ce que je fais des sons pour vous et pas pour moi ?
+[right][dialogue][p] non
+[right][dialogue][p] Par contre je les postes pour vous
+[right][dialogue][p] Y a pleins de choses que je ne poste pas et que vous ne verrez jamais 😚
+[right][dialogue][p] ( et à juste titre des fois :,) )
+[right][dialogue][audio] assets/music/impossible/2am22-prod-demo.mp3
+`;
+
+var everyGirls = `
+[right][dialogue][p] malgré les apparences 
+[right][dialogue][p] je jure jsuis pas un charo
+[right][dialogue][p] irl jsuis tout mignon gentil
+[right][dialogue][p] dans la vie je pourrais m'appeler jean tellement jsuis gentil
+[right][dialogue][p] jai un tête à m'appeler Bravo le champion
+[right][dialogue][p] bref par contre j'ai tendance à trop aimer 
+[right][dialogue][p] les ruptures c'est très difficile
+[right][dialogue][p] mais hônnetement avec tout ce que je fais des fois c'est mériter 
+[right][dialogue][p] ( en ligne je suis méchant agrou )
+[right][dialogue][p] du coup tiens
+[right][dialogue][p] ca suivait pas trop ma da en anglais
+[right][dialogue][audio] assets/music/mp3/impossible/every-types-of-girls-demo.mp3 
+`;
+
+var nora = `
+[right][dialogue][p] Elle est compliqué à faire celle là
+[right][dialogue][p] la prod est incr, un peu dans le mood Je ferais avec mais version Radiohead
+[right][dialogue][p] ou Hotel California
+[right][dialogue][p] bref faut que je fasse des recherches sur la Noradrénaline
+[right][dialogue][p] dites moi en dm si vous connaissez un truc dessus
+`;
+
+var tahitien1 = `
+[right][dialogue][p] Mes musiques en tahitien ont un mood particulier
+[right][dialogue][p] En français je parle de sentiments
+[right][dialogue][p] En anglais je m'amuse avec des vibes digitales
+[right][dialogue][p] En tahitien c'est très solenelle bien que je fasse bcp de fautes encore
+[right][dialogue][p] ma première chanson en tahitien a beaucoup été félicité pour non seulement avoir essayer
+[right][dialogue][p] mais pour avoir réussi à faire quelques choses de bien malgré ma méconnaissance de la langues
+[right][dialogue][p] sur ce morceau je devais justement exprimer ma méconnaissance de ma langue 
+[right][dialogue][p] mais d'arriver avec des mots simple mon amour pour ma culture
+[right][dialogue][p] je peux juste pas le poster parce que jai fait la prod sur fl studio gratuit 😂
+[right][dialogue][a] https://www.youtube.com/watch?v=HMkt49rglaQ
+[right][dialogue][p] ( askip je peut me faire flag si je la poste je vais perdre mon compte et tout )
+[right][dialogue][p] bref tenez 
+[right][dialogue][audio] assets/music/mp3/impossible/aita-vau-i-ite-eaha-te-rave.mp3
+`;
+
+var laVie = `
+[right][dialogue][p] un peu nul celle là non?
+[right][dialogue][p] dites moi ce que vous en pensez
+[right][dialogue][audio] assets/music/mp3/trash/lavie-prod-demo.mp3
+`;
+
+var jeFeraisAlt = `
+[right][dialogue][p] Hônnetement quand j'ai fais Je ferais avec
+[right][dialogue][p] je me suis dis faut j'essaie dans un autre style voir si ca me plait
+[right][dialogue][p] du coup jai fait ca mais je prefere la première
+[right][dialogue][audio] assets/music/mp3/trash/je-ferais-avec-trash.mp3 
+`;
+
+var dekStrux = `
+[right][dialogue][p] Vous le savez jaime bcp m'amusez
+[right][dialogue][p] Ca a donner Pisstrack dans le premier album
+[right][dialogue][p] n'allez pas écoutez
+[right][dialogue][p] Bah là pareil je voulais déconner
+[right][dialogue][p] Dans un album Pop, mettre un son de chez moi
+[right][dialogue][p] en plus je lai mal fait
+[right][dialogue][p] deso ceux qui font du deck
+[right][dialogue][p] bref
+[right][dialogue][audio] assets/music/mp3/trash/dek-struction-prod-demo.mp3
+`;
+
+var ptnClope = `
+[right][dialogue][p] presque tout mon entourage fument
+[right][dialogue][p] y a pas un endroit où j'irais malheuresement où ça ne fume pas
+[right][dialogue][p] et c'est le cas pour beaucoup de gens
+[right][dialogue][p] ca me fait de la peine quand ils me disent
+[left][dialogue][p] " Ouais fait pas ça, te met pas dans les cigarettes ca va te ruiner la vie "
+[right][dialogue][p] puis même pas deux minutes après me proposer une clope
+[right][dialogue][p] pour enfin me dévisager quand je refuse
+[right][dialogue][p] jai fait une instru sur ca du coup mais bon cest pas très propre
+[right][dialogue][audio] assets/music/mp3/trash/ptn-dclope-prod-demo.mp3
+`;
+
+var onDeco = `
+[right][dialogue][p] je me suis éclater à la faire
+[right][dialogue][p] jai envoyer a des amis ils étaient moyen chaud
+[right][dialogue][p] ( je peut comprendre )
+[right][dialogue][p] mais contexte : jme suis grave inspiré des musiques que j'écoutais sur xbox
+[right][dialogue][p] jpourrais faire ce type de son tout les jours
+[right][dialogue][p] jpouvais pas la poster prcq cetait dans ma phase de doute existentielle bahaha
+[right][dialogue][audio] assets/music/mp3/impossible/asyl.mp3
+[right][dialogue][p] si vous voulez jpeut la refaire
+`;
+
+var vacance = `
+[right][dialogue][p] je veux rien savoir 
+[right][dialogue][p] ce son pour moi surpasse est elle
+[right][dialogue][p] ca fait plusieurs pote que jvois ca fait
+[left][dialogue][p] "gnegnegne cest bien mais pas à la hauteur de est elle"
+[left][dialogue][p] "gnegnegne"
+[left][dialogue][p] "je met les céréales après le lait parce mes parents ne m'aimes pas"
+[left][dialogue][p] "gnegnegne"
+[right][dialogue][p] cpa ma faute si tas de mauvais goût
+[right][info][h2] ouah comment je suis énervé une dinguerie
+[right][dialogue][p] jai envie de faire une animation anime rien que pour ce son
+[right][dialogue][p] tellement je laime ce son
+[right][dialogue][p] pour vous dire
+[right][info][h2] ca va etre long
+[right][dialogue][p] Javais complètement oublier cette musique
+[right][dialogue][p] je lai retrouver paumer dans mon drive
+[right][dialogue][p] jai fait
+<br>
+[center][dialogue][p] Oh mais ce serait pas mon son favoris? Je chantais quoi dessus déjà
+<br><br><br><br>
+[right][dialogue][p] j'ai rééecouter jai rougis comme une gamine avec son premier copain quand ils se font leur premier bisou sur la bouche
+[right][dialogue][p] et en même temps c pas agréable prcq les gens autour ils jugent
+[right][dialogue][p] vsy cest tout pour moi aller ciao
+[right][dialogue][audio] assets/music/mp3/impossible/Att-les-vacances.mp3
+`;
+
+var afterHim = `
+[right][dialogue][p] En gros jai entendu un patterne d'une musique de Tomy que jai trop kiffer
+[right][dialogue][p] Du coup jai copi.. hum je me suis inspiré
+[right][dialogue][a] https://soundcloud.com/denjivsslayy/jsuis-dans-ma-barque
+[right][dialogue][p] fun fact : jai mixer le bail
+[right][dialogue][p] cest pour ca on l'entend mieux sur celle la que ses nouvelle
+[right][dialogue][p] ( je tire a balle réell pah pah pah )
+[right][dialogue][p] en vrai ma version est moin bien et en plus en anglais
+[right][dialogue][p] Tomy va pas aimer
+[left][dialogue][p] gnegnegne
+[right][dialogue][audio] assets/music/mp3/impossible/After-him.mp3
+[right][info][h2] en vrai mes musiques on dirait grave la fin de quelques choses
 `;

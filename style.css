@@ -121,6 +121,12 @@ h1 {
 .right {
     display: block; text-align: right;
 }
+.right .dialogue {
+    color: #000;
+    background-color: #ddd;
+    border: solid 1px #888;
+}
+
 .center {
     display: block; text-align: center;
 }
