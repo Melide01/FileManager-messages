@@ -68,14 +68,14 @@ window.ouinList = {
 }
 window.trashList = {
     "je ferais avec trash": "jeFeraisAlt",
-    "make the pain go away v.1": "",
+    "make the pain go away v.1": "oldPain",
     "La vie est étrange": "laVie",
     "dek-struction": "dekStrux",
     "ptn de clope": "ptnClope",
-
-    "Vacay": "",
-    "please stay momma": "",
-    "i know you hate me too": ""
+    "Vacay": "vacay",
+    "please stay momma": "dadamoma",
+    "ksk t con v0": "KskTcon",
+    "elle veut que du": "elleVeut"
 }
 window.misc = {
     "Luciole": "",
@@ -84,8 +84,8 @@ window.misc = {
     "Project T": ""
 }
 
-
-
+// link if i wanna redirect to audiomack
+// [right][dialogue][a] https://audiomack.com/melide/song/... 
 
 // The actual conv data
 var Evadls = `
@@ -141,6 +141,7 @@ var MrRedman = `
 [left][dialogue][p] Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,
 [center][info][h2] En gros allez vous faire foutre quoi
 [left][info][h2] Vous avez reçu 1 message de Maman
+
 `;
 
 var painGo = `
@@ -339,7 +340,10 @@ var reveurToujours = `
 [center][info][h2] puis snaf et moi on a sortis Larme Noire
 [right][dialogue][img] assets/image/larmenoir.png
 
-<center><info><h2> Et aujourd'hui, 2024, on sort Photo Souvenir
+[center][info][h2] ...
+<br><br><br>
+[center][dialogue][p] Et aujourd'hui, 2024, on sort Photo Souvenir
+<br><br><br>
 `;
 
 var plusEspace = `
@@ -378,6 +382,7 @@ var plusEspace = `
 [right][dialogue][p] vsy faut que j'ai des idées pour les 3 derniers
 [right][dialogue][p] OUI DEPUIS DES ANNÉES J'AI UN ESPACE SATURÉ BAHAHAHAHHAHAHAHAHAH
 [left][dialogue][p] 🤣🤣🤣
+[right][dialogue][p] jv faire un son dessus
 `;
 
 var babyKsk = `
@@ -391,6 +396,7 @@ var babyKsk = `
 [right][dialogue][p] Je t'imagines encore avec lui <3
 [left][dialogue][p] T'excuse pas c'est rien j'y suis aussi moi et là photo elle date avec C'st compliqué en ce moment
 [right][dialogue][p] Tkt pas <3
+[right][info][h2] Vu.
 `;
 
 var sorcellerie = `
@@ -484,6 +490,7 @@ var teataiti = `
 `;
 
 var deeperInner = `
+[right][info][h2] John
 [right][dialogue][p] Si vous le saviez pas
 [right][dialogue][p] ( même si cest dur de ne pas le savoir avec moi )
 [right][dialogue][p] Jai un tres mauvais rapport avec moi, mon image et qui je suis en général
@@ -493,6 +500,7 @@ var deeperInner = `
 `;
 
 var deux22 = `
+[right][info][h2] John
 [right][dialogue][p] Ca devait être la suite de 1h11
 [right][dialogue][p] mais en anglais
 [right][dialogue][p] jai pas pu poser sur linstru bien que je laime bien
@@ -503,10 +511,11 @@ var deux22 = `
 [right][dialogue][p] Par contre je les postes pour vous
 [right][dialogue][p] Y a pleins de choses que je ne poste pas et que vous ne verrez jamais 😚
 [right][dialogue][p] ( et à juste titre des fois :,) )
-[right][dialogue][audio] assets/music/impossible/2am22-prod-demo.mp3
+[right][dialogue][audio] assets/music/mp3/impossible/DeuxAm22-prod-demo.mp3
 `;
 
 var everyGirls = `
+[right][info][h2] John
 [right][dialogue][p] malgré les apparences 
 [right][dialogue][p] je jure jsuis pas un charo
 [right][dialogue][p] irl jsuis tout mignon gentil
@@ -522,14 +531,17 @@ var everyGirls = `
 `;
 
 var nora = `
+[right][info][h2] John
 [right][dialogue][p] Elle est compliqué à faire celle là
 [right][dialogue][p] la prod est incr, un peu dans le mood Je ferais avec mais version Radiohead
 [right][dialogue][p] ou Hotel California
 [right][dialogue][p] bref faut que je fasse des recherches sur la Noradrénaline
 [right][dialogue][p] dites moi en dm si vous connaissez un truc dessus
+[center][info][h2] pas de demo cette fois deso je travaille dessus
 `;
 
 var tahitien1 = `
+[right][info][h2] John
 [right][dialogue][p] Mes musiques en tahitien ont un mood particulier
 [right][dialogue][p] En français je parle de sentiments
 [right][dialogue][p] En anglais je m'amuse avec des vibes digitales
@@ -546,22 +558,27 @@ var tahitien1 = `
 `;
 
 var laVie = `
-[right][dialogue][p] un peu nul celle là non?
+[right][info][h2] John
+[right][dialogue][p] un peu nul cette intru là non?
 [right][dialogue][p] dites moi ce que vous en pensez
 [right][dialogue][audio] assets/music/mp3/trash/lavie-prod-demo.mp3
 `;
 
 var jeFeraisAlt = `
+[right][info][h2] John
 [right][dialogue][p] Hônnetement quand j'ai fais Je ferais avec
 [right][dialogue][p] je me suis dis faut j'essaie dans un autre style voir si ca me plait
 [right][dialogue][p] du coup jai fait ca mais je prefere la première
-[right][dialogue][audio] assets/music/mp3/trash/je-ferais-avec-trash.mp3 
+[right][dialogue][audio] assets/music/mp3/trash/je-ferais-avec-trash.mp3
+[right][dialogue][p] Jv surement le poster en entier sur la nouvelle chaine musique !
+[right][dialogue][a] https://www.youtube.com/channel/UCKTLiCALCZp5X0EXATkpk2A
 `;
 
 var dekStrux = `
+[right][info][h2] John
 [right][dialogue][p] Vous le savez jaime bcp m'amusez
 [right][dialogue][p] Ca a donner Pisstrack dans le premier album
-[right][dialogue][p] n'allez pas écoutez
+[right][info][p] ( n'allez pas écoutez )
 [right][dialogue][p] Bah là pareil je voulais déconner
 [right][dialogue][p] Dans un album Pop, mettre un son de chez moi
 [right][dialogue][p] en plus je lai mal fait
@@ -571,29 +588,33 @@ var dekStrux = `
 `;
 
 var ptnClope = `
+[right][info][h2] John
 [right][dialogue][p] presque tout mon entourage fument
 [right][dialogue][p] y a pas un endroit où j'irais malheuresement où ça ne fume pas
 [right][dialogue][p] et c'est le cas pour beaucoup de gens
 [right][dialogue][p] ca me fait de la peine quand ils me disent
 [left][dialogue][p] " Ouais fait pas ça, te met pas dans les cigarettes ca va te ruiner la vie "
-[right][dialogue][p] puis même pas deux minutes après me proposer une clope
+[right][dialogue][p] puis même pas deux minutes après
+[left][dialogue][p] " Tiens tu veux essayer? "
 [right][dialogue][p] pour enfin me dévisager quand je refuse
 [right][dialogue][p] jai fait une instru sur ca du coup mais bon cest pas très propre
 [right][dialogue][audio] assets/music/mp3/trash/ptn-dclope-prod-demo.mp3
 `;
 
 var onDeco = `
+[right][info][h2] John
 [right][dialogue][p] je me suis éclater à la faire
 [right][dialogue][p] jai envoyer a des amis ils étaient moyen chaud
 [right][dialogue][p] ( je peut comprendre )
 [right][dialogue][p] mais contexte : jme suis grave inspiré des musiques que j'écoutais sur xbox
 [right][dialogue][p] jpourrais faire ce type de son tout les jours
 [right][dialogue][p] jpouvais pas la poster prcq cetait dans ma phase de doute existentielle bahaha
-[right][dialogue][audio] assets/music/mp3/impossible/asyl.mp3
+[right][dialogue][a] https://soundcloud.com/melide/on-decolle-en
 [right][dialogue][p] si vous voulez jpeut la refaire
 `;
 
 var vacance = `
+[right][info][h2] John
 [right][dialogue][p] je veux rien savoir 
 [right][dialogue][p] ce son pour moi surpasse est elle
 [right][dialogue][p] ca fait plusieurs pote que jvois ca fait
@@ -611,7 +632,9 @@ var vacance = `
 [right][dialogue][p] je lai retrouver paumer dans mon drive
 [right][dialogue][p] jai fait
 <br>
-[center][dialogue][p] Oh mais ce serait pas mon son favoris? Je chantais quoi dessus déjà
+[center][dialogue][p] Dis donc
+[center][dialogue][p] mais ce serait pas mon son favoris? 
+[center][dialogue][p] Je chantais quoi dessus déjà
 <br><br><br><br>
 [right][dialogue][p] j'ai rééecouter jai rougis comme une gamine avec son premier copain quand ils se font leur premier bisou sur la bouche
 [right][dialogue][p] et en même temps c pas agréable prcq les gens autour ils jugent
@@ -620,15 +643,67 @@ var vacance = `
 `;
 
 var afterHim = `
+[right][info][h2] John
 [right][dialogue][p] En gros jai entendu un patterne d'une musique de Tomy que jai trop kiffer
 [right][dialogue][p] Du coup jai copi.. hum je me suis inspiré
 [right][dialogue][a] https://soundcloud.com/denjivsslayy/jsuis-dans-ma-barque
 [right][dialogue][p] fun fact : jai mixer le bail
-[right][dialogue][p] cest pour ca on l'entend mieux sur celle la que ses nouvelle
+[right][dialogue][p] cest pour ca on entend mieux sa voix sur celle la que ses nouvelle musique
 [right][dialogue][p] ( je tire a balle réell pah pah pah )
-[right][dialogue][p] en vrai ma version est moin bien et en plus en anglais
+[right][dialogue][p] en vrai ma version est moin bien et en plus elle est en anglais
 [right][dialogue][p] Tomy va pas aimer
 [left][dialogue][p] gnegnegne
 [right][dialogue][audio] assets/music/mp3/impossible/After-him.mp3
 [right][info][h2] en vrai mes musiques on dirait grave la fin de quelques choses
+`;
+
+var oldPain = `
+[right][info][h2] John
+[right][dialogue][p] De base
+[right][dialogue][p] Quand j'ai voulu faire cette musique
+[right][dialogue][p] Je voulais un truc plutôt soft et presque idilique
+[right][dialogue][p] je me suis rendu compte à la fin que la musique était triste et me faisait vraiment mal
+[right][dialogue][p] Et cette ancienne version ne faisait pas ressentir ce que je ressentais vraiment
+[right][dialogue][p] Je lai refaite
+[right][dialogue][p] La nouvelle version révèle à 200% ce que je ressens sur cette histoire
+[right][dialogue][p] je pleure encore comme un bébé sur la nouvelle pour vous dire
+[right][dialogue][p] jvous balance l'ancienne version du coup pour la comparaison
+[right][dialogue][audio] assets/music/mp3/trash/make-the-pain-go-away-trash.mp3
+`;
+
+var vacay = `
+[right][info][h2] John
+[right][dialogue][p] musique rigolote et beauuucoup trop douce
+[right][dialogue][p] jvoulais la refaire
+[right][dialogue][p] jsp comment
+[right][dialogue][p] mais pg jvous le met là
+[right][dialogue][audio] assets/music/mp3/impossible/Vacay.mp3
+`;
+
+var dadamoma = `
+[right][info][h2] John
+[right][dialogue][p] This song makes me cry a bit when i think of it
+[right][dialogue][p] its about my dad and mom
+[right][dialogue][p] i used to judge them when i was young
+[right][dialogue][p] i judge them a bit too sometimes, but i understand where theyve been through
+[right][dialogue][p] i love them, i make sure i tell them at night before sleep
+[right][dialogue][p] i have to work on the song a bit more
+[right][dialogue][p] it doesnt sound as great as i want it to be ;(
+[center][info][h2] kinda working on it time to time
+`;
+
+var KskTcon = `
+[right][info][h2] John
+[right][dialogue][p] cest la première version de Baby ksk t'es con
+[right][dialogue][p] c'est beaucoup plus fun comme mood
+[right][dialogue][p] j'avais envie d'arrêter de déconner
+[right][dialogue][p] Jai repris le refrain et je trouve lavoir améliorer
+[right][dialogue][p] faites moi des comparaison si vous voulez ! je kiff
+[right][dialogue][a] https://soundcloud.com/melide/quest-ce-que-tes-con
+`;
+
+var elleVeut = `
+[right][dialogue][a] https://soundcloud.com/melide/elle-veut-que-du/s-61rJex2Pe0A?si=193f28ce5eae42fbb1a9b031981ea1f1&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+[right][dialogue][p] dsl d'avance
+[right][dialogue][p] c mon premier son sur flstudio
 `;
