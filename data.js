@@ -201,6 +201,41 @@ var panier = `
 
 var faireAvec = `
 [right][info][h2] John
+
+[center][info][h2] 9 aoùt 2019
+[left][dialogue][p] Salut?
+[right][dialogue][p] Yup :3
+[left][dialogue][p] Comment ça va ?
+[right][dialogue][p] chava bien et twa :3
+[left][dialogue][p] cava cava
+
+[center][info][h2] 21 décembre 2019
+[left][dialogue][p] Je t'ai perdu sentimentalement .. c'est different
+[right][dialogue][p] C'est diffèrent oui
+[right][dialogue][p] Et c'est pas si grave ?
+[right][dialogue][p] Fin je sais pas vraiment mais
+[right][dialogue][p] Soit pas si triste de me perdre en quoi que ce soit
+[left][dialogue][p] Tu t'en rends pas compte
+[left][dialogue][p] J'espere que tu t'en rendra compte avant que par exemple ta copine et toi vous vous engueulez
+[left][dialogue][p] parce que si... tu te sentiras triste...
+[left][dialogue][p] Même si t'es passé à autre chose.. tu resteras triste..
+[right][dialogue][p] Oui je vois
+[left][dialogue][p] C'est juste que je tiens encore à toi malgré moi, t'as été un pillier de ma vie à une époque et je t'aimais encore après la rupture..
+[right][dialogue][p] après t'es avec quelqu'un mtn cava
+[left][dialogue][p] c'est pas la question
+
+[center][info][h2] 2021
+
+[left][dialogue][p] Je sais que c'est dur mais s'il te plait tu es fort John ne laisse pas tomber
+[right][dialogue][p] Merci de me soutenir ca fair plaisir :,3
+[right][dialogue][p] Je suis bien plus fort que ça, chui batman frr
+[left][dialogue][p] tkt c'est normal
+[left][dialogue][p] Retombe pas dedans sinon jserais pas contente 
+[right][dialogue][p] En vrai jsuis en manque d'attention de fou, mes parents ils me parlent pas ni ma famille c'est dur mais jsuis pas seul dans cette situation
+[right][dialogue][p] ca n'empeche pas que je pleure comme un bébé a cause de ca
+
+[center][info][h2] 2022
+
 [right][dialogue][img] assets/image/jonh1.png
 [right][dialogue][p] cringe
 [left][dialogue][p] T'es pas cringe !! Tu t'assumes de plus en plus et c'est vraiment beau à voir 﫶
@@ -652,7 +687,7 @@ var afterHim = `
 [right][dialogue][p] ( je tire a balle réell pah pah pah )
 [right][dialogue][p] en vrai ma version est moin bien et en plus elle est en anglais
 [right][dialogue][p] Tomy va pas aimer
-[left][dialogue][p] gnegnegne
+[left][dialogue][p] gnegnegne t pas aller a l'école
 [right][dialogue][audio] assets/music/mp3/impossible/After-him.mp3
 [right][info][h2] en vrai mes musiques on dirait grave la fin de quelques choses
 `;

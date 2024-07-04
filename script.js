@@ -91,6 +91,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // misc
     animateLoadingScreen()
+    
+
+    setTimeout(() => {
+        // some troll hehehe ;)
+        currentLoadingText = "loadingText2";
+    }, 500000)
+})
+
+function loadTheExperience() {
+    document.getElementById('attentionImportantWarning').style.opacity = 0;
     setTimeout(() => {
         if (!is_released) {
             return
@@ -98,15 +108,12 @@ document.addEventListener('DOMContentLoaded', function() {
         loadingScreen.style.opacity = 0;
         setTimeout(() => {
             loadingScreen.style.display = "none";
+            document.getElementById('attentionImportantWarning').style.display = "none";
             loadLeftBar(trackDirInfo.main);
         }, 200);
-    }, Math.random() * 2000);
+    }, 500 + (Math.random() * 2000));
+}
 
-    setTimeout(() => {
-        // some troll hehehe ;)
-        currentLoadingText = "loadingText2";
-    }, 5000)
-})
 
 var hideLeftBar = false;
 var hideRightBar = false;
