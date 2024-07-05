@@ -7,8 +7,8 @@ var hideBtnR;
 var hideBtnL;
 
 // IMPORTANT
-var is_released = false;
-const openDir = "poubelle";
+var is_released = true;
+const openDir = "main";
 // IMPORTANT
 
 
@@ -203,10 +203,20 @@ function loadLeftBar(dir) {
 
     listToObject.forEach((element, index) => {
         setTimeout(() => {
-            console.log(element)
             if (element === "") {
                 return
             }
+
+            const ifNone = new Set(element)
+            for (let char in element) {
+                if (ifNone.has('?')) {
+                    const notyet = document.createElement('li'); notyet.textContent = '???'; notyet.style.opacity = '.5';
+                    ul.appendChild(notyet);
+                    trackLiElementList.push(notyet);
+                    return
+                }
+            } 
+
             if (window[dir.src][element] !== "---") {
                 const li = document.createElement('li'); const a = document.createElement('a');
                 a.textContent = element;
@@ -254,8 +264,12 @@ function loadConv(conv) {
         { regex: /\[(.*)\]\[(.*)\]\[(img)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
         { regex: /\[(.*)\]\[(.*)\]\[(video)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mp4"></$3></div>'},
         { regex: /\[(.*)\]\[(.*)\]\[(audio)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mpeg"></$3></div>'},
-        { regex: /\[(form)] (.*)/gim, replacement: '<iframe src="$2" class="gform" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>'}
+        { regex: /\[(form)] (.*)/gim, replacement: '<iframe src="$2" class="gform" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(sc)\] (.*)/gim, replacement: '<div class="$1"> <iframe class="$2" scrolling="no" frameborder="no" allow="autoplay" src="$4"></iframe>'},
+        { regex: /\[(.*)\]\[(.*)\]\[(yt)\] (.*)/gim, replacement: '<div class="$1"><iframe class="$2" src="$4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>'}
     ]
+
+    //<div class="$1"><iframe class="$2" src="$3" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     let output = conv;
     // console.log(testImg.test(output))

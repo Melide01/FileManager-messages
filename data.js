@@ -21,7 +21,7 @@ const trackDirInfo = {
             "backgroundcolor": "#500"
         }
     },
-    "..autres": {
+    "": {
         "name": "autresProjets",
         "src": "misc",
         "theme": {
@@ -33,34 +33,34 @@ const trackDirInfo = {
 // metalist
 window.trackList = {
     "Melide - Mr Redman": "MrRedman",
-    "Melide - A-t-elle": "Atelle",
+    "?": "Atelle",
     
-    "Melide - Je Ferais Avec": "faireAvec",
-    "Melide - Compliqué pour moi": "compPourMe",
+    "??": "faireAvec",
+    "???": "compPourMe",
     "Melide - Du Temps": "duTemps",
 
     "Melide - Childhood Cliché": "childClich",
     "Melide - To Make the Pain Go Away": "painGo",
     "Melide - Elle veut juste que je la laisse": "evq",
 
-    "Melide - Je Rêve Encore": "reveurToujours",
-    "Melide - Thanks to Her": "thanks",
+    "????": "reveurToujours",
+    "?????": "thanks",
     "Melide - Dans ton Panier": "panier",
 
     "Melide - J'ai plus d'espace": "plusEspace",
-    "Melide - Baby, qu'est ce que t'es": "babyKsk",
-    "Melide - Sorcellerie": "sorcellerie",
+    "??????": "babyKsk",
+    "???????": "sorcellerie",
 }
 window.ouinList = {
     "true deeper inner thoughts": "deeperInner",
     "Melide - Evadls": "Evadls",
     "Melide 2am22": "deux22",
     "every-types-of-girls": "everyGirls",
-    "t à tahiti": "teataiti",
-    "On attends les vacanves": "vacance",
+    "?": "teataiti",
+    "??": "vacance",
     "on décolle": "onDeco",
-    "noradrénaline": "nora",
-    "Melide aita vau i ite eaha te rave": "tahitien1",
+    "???": "nora",
+    "????": "tahitien1",
     "fvgl ft. Tomy": "fvgl",
     "Jeanne cover": "jeanneCov",
     "after him": "afterHim"
@@ -484,7 +484,7 @@ var jeanneCov = `
 [right][dialogue][p] Je devais en faire une reprise
 [right][dialogue][p] Jai pas pu la mettre dans l'album donc je le met la
 [right][dialogue][audio] assets/music/mp3/impossible/jeanne-cover.mp3
-[right][dialogue][a] https://youtu.be/0bnZhBrcyzo?si=WCsFPSv6tESa4cKDp
+[right][dialogue][yt] https://www.youtube.com/embed/0bnZhBrcyzo?si=HbEiNh0zcCd9yGE4
 `;
 
 var fvgl = `
@@ -507,10 +507,10 @@ var fvgl = `
 [left][dialogue][p] Mais c'est pas vrai t'es vivant
 [left][dialogue][p] auft lourd le mix
 [left][dialogue][p] Dsl j’avais prévu de bosser pour fgv comme j’fais plus rien sauf que au final j’ai fais ça
-[left][dialogue][a] https://soundcloud.com/denjivsslayy/last-birthday
-[left][dialogue][a] https://soundcloud.com/denjivsslayy/oyasumi-platforms-version
-[left][dialogue][a] https://soundcloud.com/denjivsslayy/0-passions-jsuis-lmechant-quon-deteste-dans-les-films
-[left][dialogue][a] https://soundcloud.com/denjivsslayy/jcrois-jai-des-ecailles-et-jpense-avoir-des-cornes-aussi-jsuis-lmec-mort-quon-loot
+[left][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1782002430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
+[left][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1855803267&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
+[left][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1838556549&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
+[left][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1815924117&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 [left][dialogue][p] Donc j’pense faudra attendre pour fgv 😂😂
 [center][info][h2] The world has ended two times when John has sent this message
 [right][dialogue][p] Salut je suis ton ex toxique préféré qui revient sans prevenir
@@ -593,7 +593,7 @@ var tahitien1 = `
 [right][dialogue][p] sur ce morceau je devais justement exprimer ma méconnaissance de ma langue 
 [right][dialogue][p] mais d'arriver avec des mots simple mon amour pour ma culture
 [right][dialogue][p] je peux juste pas le poster parce que jai fait la prod sur fl studio gratuit 😂
-[right][dialogue][a] https://www.youtube.com/watch?v=HMkt49rglaQ
+[right][dialogue][yt] https://www.youtube.com/embed/HMkt49rglaQ?si=ijeReqA6QlsZlr53
 [right][dialogue][p] ( askip je peut me faire flag si je la poste je vais perdre mon compte et tout )
 [right][dialogue][p] bref tenez 
 [right][dialogue][audio] assets/music/mp3/impossible/aita-vau-i-ite-eaha-te-rave.mp3
@@ -651,7 +651,7 @@ var onDeco = `
 [right][dialogue][p] mais contexte : jme suis grave inspiré des musiques que j'écoutais sur xbox
 [right][dialogue][p] jpourrais faire ce type de son tout les jours
 [right][dialogue][p] jpouvais pas la poster prcq cetait dans ma phase de doute existentielle bahaha
-[right][dialogue][a] https://soundcloud.com/melide/on-decolle-en
+[right][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1402965649&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 [right][dialogue][p] si vous voulez jpeut la refaire
 `;
 
@@ -688,7 +688,7 @@ var afterHim = `
 [right][info][h2] John
 [right][dialogue][p] En gros jai entendu un patterne d'une musique de Tomy que jai trop kiffer
 [right][dialogue][p] Du coup jai copi.. hum je me suis inspiré
-[right][dialogue][a] https://soundcloud.com/denjivsslayy/jsuis-dans-ma-barque
+[right][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1398073858&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 [right][dialogue][p] fun fact : jai mixer le bail
 [right][dialogue][p] cest pour ca on entend mieux sa voix sur celle la que ses nouvelle musique
 [right][dialogue][p] ( je tire a balle réell pah pah pah )
@@ -741,7 +741,7 @@ var KskTcon = `
 [right][dialogue][p] j'avais envie d'arrêter de déconner
 [right][dialogue][p] Jai repris le refrain et je trouve lavoir améliorer
 [right][dialogue][p] faites moi des comparaison si vous voulez ! je kiff
-[right][dialogue][a] https://soundcloud.com/melide/quest-ce-que-tes-con
+[right][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1449677695&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 `;
 
 var elleVeut = `
@@ -753,5 +753,3 @@ var elleVeut = `
 var votingForm = `
 [form] https://docs.google.com/forms/d/e/1FAIpQLSeo9ZSPdnDdw1uSzeHVvN5NHoJx5QOP6ThZT_UISOUnq6cKIQ/viewform?embedded=true
 `;
-
-// <iframe src="" width="640" height="1821" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
