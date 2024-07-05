@@ -8,7 +8,10 @@ var hideBtnL;
 
 // IMPORTANT
 var is_released = false;
+const openDir = "poubelle";
 // IMPORTANT
+
+
 
 var trackLiElementList = [];
 
@@ -70,6 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     dirListToObj.forEach((element) => {
+        if(element === "") {
+            return
+        }
+
         const a = document.createElement('a'); a.innerHTML = '<i style="margin-right: 10px;" class="fa-regular fa-folder"></i>' + element;
         uidir.appendChild(a);
 
@@ -93,10 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
     animateLoadingScreen()
     
 
-    setTimeout(() => {
-        // some troll hehehe ;)
-        currentLoadingText = "loadingText2";
-    }, 500000)
+    
 })
 
 function loadTheExperience() {
@@ -109,9 +113,14 @@ function loadTheExperience() {
         setTimeout(() => {
             loadingScreen.style.display = "none";
             document.getElementById('attentionImportantWarning').style.display = "none";
-            loadLeftBar(trackDirInfo.main);
+            loadLeftBar(trackDirInfo[openDir]);
         }, 200);
     }, 500 + (Math.random() * 2000));
+
+    setTimeout(() => {
+        // some troll hehehe ;)
+        currentLoadingText = "loadingText2";
+    }, 5000)
 }
 
 
@@ -193,23 +202,33 @@ function loadLeftBar(dir) {
     leftbar.appendChild(ul)
 
     listToObject.forEach((element, index) => {
-        
         setTimeout(() => {
-            const li = document.createElement('li'); const a = document.createElement('a');
-            a.textContent = element;
-            li.appendChild(a);
-            ul.appendChild(li);
-            trackLiElementList.push(li);
+            console.log(element)
+            if (element === "") {
+                return
+            }
+            if (window[dir.src][element] !== "---") {
+                const li = document.createElement('li'); const a = document.createElement('a');
+                a.textContent = element;
+                li.appendChild(a);
+                ul.appendChild(li);
+                trackLiElementList.push(li);
 
-            li.addEventListener('click', () => {
-                trackLiElementList.forEach((element2, index) => {
-                    if (element2 !== li) {
-                        element2.classList.remove('activeLi');
-                    }
+                li.addEventListener('click', () => {
+                    trackLiElementList.forEach((element2, index) => {
+                        if (element2 !== li) {
+                            element2.classList.remove('activeLi');
+                        }
+                    });
+                    li.classList.add('activeLi');
+                    loadConv(currentDir[element])
                 });
-                li.classList.add('activeLi');
-                loadConv(currentDir[element])
-            });
+            } else {
+                const breakEl = document.createElement('p'); breakEl.classList.add('breakLine');
+                ul.appendChild(breakEl); trackLiElementList.push(breakEl);
+            }
+
+            
 
 
 
@@ -235,6 +254,7 @@ function loadConv(conv) {
         { regex: /\[(.*)\]\[(.*)\]\[(img)\] (.*)/gim, replacement: '<div class="$1"><$3 class="$2" src="$4"></$3></div>'},
         { regex: /\[(.*)\]\[(.*)\]\[(video)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mp4"></$3></div>'},
         { regex: /\[(.*)\]\[(.*)\]\[(audio)\] (.*)/gim, replacement: '<div class="$1"><$3 controls class="$2"><source src="$4" type="$3/mpeg"></$3></div>'},
+        { regex: /\[(form)] (.*)/gim, replacement: '<iframe src="$2" class="gform" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>'}
     ]
 
     let output = conv;

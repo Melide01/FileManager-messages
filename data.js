@@ -22,7 +22,7 @@ const trackDirInfo = {
         }
     },
     "..autres": {
-        "name": "OtherProjects",
+        "name": "autresProjets",
         "src": "misc",
         "theme": {
             "backgroundcolor": "#111"
@@ -79,9 +79,16 @@ window.trashList = {
 }
 window.misc = {
     "Luciole": "",
-    "Projet D9": "",
     "Plight": "",
-    "Project T": ""
+
+    "b2": "---",
+
+    "Projet D9": "",
+    "Project T": "",
+
+    "b1": "---",
+
+    "Votez s'il vous plait": "votingForm"
 }
 
 // link if i wanna redirect to audiomack
@@ -702,7 +709,7 @@ var oldPain = `
 [right][dialogue][p] Je lai refaite
 [right][dialogue][p] La nouvelle version révèle à 200% ce que je ressens sur cette histoire
 [right][dialogue][p] je pleure encore comme un bébé sur la nouvelle pour vous dire
-[right][dialogue][p] jvous balance l'ancienne version du coup pour la comparaison
+[right][dialogue][p] jvous balance l'ancienne version pour que vous puissiez comparer
 [right][dialogue][audio] assets/music/mp3/trash/make-the-pain-go-away-trash.mp3
 `;
 
@@ -742,3 +749,9 @@ var elleVeut = `
 [right][dialogue][p] dsl d'avance
 [right][dialogue][p] c mon premier son sur flstudio
 `;
+
+var votingForm = `
+[form] https://docs.google.com/forms/d/e/1FAIpQLSeo9ZSPdnDdw1uSzeHVvN5NHoJx5QOP6ThZT_UISOUnq6cKIQ/viewform?embedded=true
+`;
+
+// <iframe src="" width="640" height="1821" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
