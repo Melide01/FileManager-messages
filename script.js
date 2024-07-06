@@ -7,7 +7,7 @@ var hideBtnR;
 var hideBtnL;
 
 // IMPORTANT
-var is_released = true;
+var is_released = false;
 const openDir = "main";
 // IMPORTANT
 
