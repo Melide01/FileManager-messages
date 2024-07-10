@@ -7,18 +7,11 @@ const trackDirInfo = {
             "backgroundcolor": "#027"
         }
     },
-    "impossible": {
-        "name": "may be continued",
+    "archives": {
+        "name": "archives",
         "src": "ouinList",
         "theme": {
             "backgroundcolor": "#505"
-        }
-    },
-    "poubelle": {
-        "name": "trashBin",
-        "src": "trashList",
-        "theme": {
-            "backgroundcolor": "#500"
         }
     },
     "": {
@@ -33,40 +26,25 @@ const trackDirInfo = {
 // metalist
 window.trackList = {
     "Melide - Mr Redman": "MrRedman",
-    "?": "Atelle",
+    "Melide - A t'elle": "Atelle",
     
-    "??": "faireAvec",
-    "???": "compPourMe",
+    "Melide - Je ferais avec": "faireAvec",
+    "Melide - Compliqué pour moi": "compPourMe",
     "Melide - Du Temps": "duTemps",
 
     "Melide - Childhood Cliché": "childClich",
     "Melide - To Make the Pain Go Away": "painGo",
     "Melide - Elle veut juste que je la laisse": "evq",
 
-    "????": "reveurToujours",
-    "?????": "thanks",
+    "Melide - Je rêve encore": "reveurToujours",
+    "Melide - Thanks to Her": "thanks",
     "Melide - Dans ton Panier": "panier",
 
     "Melide - J'ai plus d'espace": "plusEspace",
-    "??????": "babyKsk",
-    "???????": "sorcellerie",
+    "Melide - Baby, Qu'est ce que t'es": "babyKsk",
+    "Melide - Sorcellerie": "sorcellerie",
 }
 window.ouinList = {
-    "true deeper inner thoughts": "deeperInner",
-    "Melide - Evadls": "Evadls",
-    "Melide 2am22": "deux22",
-    "every-types-of-girls": "everyGirls",
-    "?": "teataiti",
-    "??": "vacance",
-    "on décolle": "onDeco",
-    "???": "nora",
-    "????": "tahitien1",
-    "fvgl ft. Tomy": "fvgl",
-    "Jeanne cover": "jeanneCov",
-    "after him": "afterHim"
-    
-}
-window.trashList = {
     "je ferais avec trash": "jeFeraisAlt",
     "make the pain go away v.1": "oldPain",
     "La vie est étrange": "laVie",
@@ -75,7 +53,20 @@ window.trashList = {
     "Vacay": "vacay",
     "please stay momma": "dadamoma",
     "ksk t con v0": "KskTcon",
-    "elle veut que du": "elleVeut"
+    "elle veut que du": "elleVeut",
+    "elle est trash": "elleEst",
+    "true deeper inner thoughts": "deeperInner",
+    "Melide - Evadls": "Evadls",
+    "Melide 2am22": "deux22",
+    "every-types-of-girls": "everyGirls",
+    "T'es à Tahiti": "teataiti",
+    "on att les vacances": "vacance",
+    "on décolle": "onDeco",
+    "aita vau": "tahitien1",
+    "fvgl ft. Tomy": "fvgl",
+    "Jeanne cover": "jeanneCov",
+    "after him": "afterHim"
+    
 }
 window.misc = {
     "Luciole": "",
@@ -194,7 +185,7 @@ var thanks = `
 `;
 
 var panier = `
-[center][info][h2] Cette conversation est fictive, mais reflète des faits réels
+[center][info][h2] ca s'est vraiment passer
 [right][info][h2] John
 [right][dialogue][p] Cc biche, t'as ecouter le son?
 [left][dialogue][p] c bien
@@ -238,8 +229,9 @@ var faireAvec = `
 [right][dialogue][p] Je suis bien plus fort que ça, chui batman frr
 [left][dialogue][p] tkt c'est normal
 [left][dialogue][p] Retombe pas dedans sinon jserais pas contente 
-[right][dialogue][p] En vrai jsuis en manque d'attention de fou, mes parents ils me parlent pas ni ma famille c'est dur mais jsuis pas seul dans cette situation
-[right][dialogue][p] ca n'empeche pas que je pleure comme un bébé a cause de ca
+[right][dialogue][p] En vrai jsuis en manque d'attention de fou, mes parents ils me parlent pas ni ma famille c'est dur mais jsuis pas seul dans le monde comme ça
+[right][dialogue][p] ca n'empeche pas que je pleure comme un bébé a cause de ca purée
+[right][dialogue][p] le miserable
 
 [center][info][h2] 2022
 
@@ -282,13 +274,13 @@ var compPourMe = `
 [right][info][h2] John
 
 [left][dialogue][img] assets/image/coeurverset.JPG
-[right][dialogue][p] J'espère fortement ❤️❤️
-[left][dialogue][p] Le mien et entrain de se détruire un peu 😅❤️❤️
-[right][dialogue][p] Oui mais je parlais aussi de toi et moi 👉👈❤️
-[left][dialogue][p] Ouii mais nous deux ça dure depuis longtemps toujours ❤️❤️
-[right][dialogue][p] Toi et lui ça doit pas être facile ça fait un moment que c dure jai l'impression🥺❤️
-[left][dialogue][p] Bah en mode ont c’est vu y’a pas longtemps pas ce week end là mais l’autre d’avant <br> Et quand il et repartie depuis le dimanche 18h j’ai pas de nouvelle.. <br>après la situation et hyper compliqué et tout et il et vraiment pas bien mais bon ❤️❤️🙂
-[right][dialogue][p] D'accord 👉👈❤️
+[right][dialogue][p] J'espère fortement <3
+[left][dialogue][p] Javous mon coeur se detruit peu à peu 😅❤️❤️
+[right][dialogue][p] Oui mais je suis la tkt pas 👉👈
+[left][dialogue][p] Ouii mais nous deux ça dure depuis longtemps toujours ❤️
+[right][dialogue][p] Toi et lui ça doit pas être facile ça fait un moment que c dure jai l'impression
+[left][dialogue][p] Bah en mode ont c’est vu y’a pas longtemps pas ce week end là mais l’autre d’avant <br> Et quand il et repartie depuis le dimanche, j’ai pas de nouvelle.. <br>après la situation et hyper compliqué et tout et il et vraiment pas bien mais bon
+[right][dialogue][p] D'accord 👉👈
 [center][info][h2] plus tard
 [left][dialogue][p] il m'a tromper il m'a humilier il m'a manipuler
 [left][dialogue][p] iil m'a traiter d'ordure
@@ -431,13 +423,13 @@ var babyKsk = `
 [right][info][h2] John
 [left][dialogue][img] assets/image/lui&moi.jpg
 [right][dialogue][p] <3..
-[left][dialogue][p] Tu sais très bien que t'es aussi important pour moi..
-[left][dialogue][p] On en a déjà parler
-[left][dialogue][p] Il est là mais toi aussi
-[right][dialogue][p] J'ai toujours un peu de jalousie dsl <3
-[right][dialogue][p] Je t'imagines encore avec lui <3
-[left][dialogue][p] T'excuse pas c'est rien j'y suis aussi moi et là photo elle date avec C'st compliqué en ce moment
-[right][dialogue][p] Tkt pas <3
+[left][dialogue][p] ??
+[left][dialogue][p] Mais John
+[left][dialogue][p] t'es tout aussi important pour moi que lui
+[right][dialogue][p] jsp jsuis peut être un peu jaloux
+[right][dialogue][p] Je t'imagines encore avec lui
+[left][dialogue][p] Tkt pas jsuis là puis ca fait un moment que c'est compliqué
+[right][dialogue][p] Tkt <3
 [right][info][h2] Vu.
 `;
 
@@ -563,8 +555,8 @@ var everyGirls = `
 [right][dialogue][p] irl jsuis tout mignon gentil
 [right][dialogue][p] dans la vie je pourrais m'appeler jean tellement jsuis gentil
 [right][dialogue][p] jai un tête à m'appeler Bravo le champion
-[right][dialogue][p] bref par contre j'ai tendance à trop aimer 
-[right][dialogue][p] les ruptures c'est très difficile
+[right][dialogue][p] bref par contre j'ai tendance à trop aimer pour que dalle
+[right][dialogue][p] et les ruptures c'est trop difficile on se sait
 [right][dialogue][p] mais hônnetement avec tout ce que je fais des fois c'est mériter 
 [right][dialogue][p] ( en ligne je suis méchant agrou )
 [right][dialogue][p] du coup tiens
@@ -651,6 +643,7 @@ var onDeco = `
 [right][dialogue][p] mais contexte : jme suis grave inspiré des musiques que j'écoutais sur xbox
 [right][dialogue][p] jpourrais faire ce type de son tout les jours
 [right][dialogue][p] jpouvais pas la poster prcq cetait dans ma phase de doute existentielle bahaha
+[right][dialogue][p] (la phase où jvoulais rename mon nom jai honte)
 [right][dialogue][sc] https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1402965649&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 [right][dialogue][p] si vous voulez jpeut la refaire
 `;
@@ -672,6 +665,7 @@ var vacance = `
 [right][info][h2] ca va etre long
 [right][dialogue][p] Javais complètement oublier cette musique
 [right][dialogue][p] je lai retrouver paumer dans mon drive
+[right][dialogue][img] assets/image/att-vac.png
 [right][dialogue][p] jai fait
 <br>
 [center][dialogue][p] Dis donc
@@ -752,4 +746,18 @@ var elleVeut = `
 
 var votingForm = `
 [form] https://docs.google.com/forms/d/e/1FAIpQLSeo9ZSPdnDdw1uSzeHVvN5NHoJx5QOP6ThZT_UISOUnq6cKIQ/viewform?embedded=true
+`;
+
+var elleEst = `
+[right][dialogue][p] je t'aime
+[right][dialogue][p] je t'attendrai
+[right][dialogue][p] et si tu ne viens jamais
+[right][dialogue][p] ...
+[right][dialogue][p] en vrai je t'attendrai pas toute ma vie
+[right][dialogue][p] mais je repenserai encore à toi
+[right][dialogue][p] même quand je serai bien entouré, que ma vie aura changé je repenserai encore à toi 
+[right][dialogue][p] et c'est chiant
+[right][dialogue][p] hônnetement je t'aime
+[right][dialogue][p] mais casse toi
+[right][dialogue][audio] assets/music/mp3/trash/Elle est.mp3
 `;
