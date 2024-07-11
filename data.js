@@ -146,14 +146,14 @@ var painGo = `
 [center][info][h2] 11h26
 [right][info][h2] John
 [left][dialogue][p] Heyyy..
-[left][dialogue][p] Jvais me sentir mal de dire ça mais ça te dérange si on se sépare et qu'on devienne amis
-[left][dialogue][p] Jsuis desoler
-[left][dialogue][p] Pardon
-[right][dialogue][p] Si c'est ce que tu veux je peux pas te forcer autrement
-[right][dialogue][p] Tu ne m'aimes plus?
+[left][dialogue][p] im gonna feel bad about it but does it bother you if we stay friends
+[left][dialogue][p] im sorry
+[left][dialogue][p] really
+[right][dialogue][p] if thats what you want I cant force you otherwise
+[right][dialogue][p] You don't love me anymore?
 [center][info][h2] 4h28
-[left][dialogue][p] Cc, c'est pour te prévenir que ta chérie est partie..
-[right][dialogue][p] Attends quoi?
+[left][dialogue][p] hi, just wanted you to know your girlfriend is dead...
+[right][dialogue][p] wait what??
 [cenfer][info][h2] You have been blocked
 `;
 
