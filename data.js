@@ -139,7 +139,8 @@ var MrRedman = `
 [left][dialogue][p] Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,
 [center][info][h2] En gros allez vous faire foutre quoi
 [left][info][h2] Vous avez reçu 1 message de Maman
-
+<br>
+[center][info][a] https://open.spotify.com/intl-fr/track/1Wh1P7uxQybHabnFcN73W9?si=67db6d5bf4444504
 `;
 
 var painGo = `
