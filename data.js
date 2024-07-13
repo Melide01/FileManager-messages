@@ -198,6 +198,16 @@ var panier = `
 `;
 
 var faireAvec = `
+[right][info][h2] Maman
+[right][dialogue][p] Bonjour docteur, est-ce qu'on pourrait diminuer les médicaments de mon fils?
+[right][dialogue][p] il trouve que c'est un peu trop fort celui lui
+[right][dialogue][p] il espère pouvoir au moins diminuer un peu ou le changer complètement si vous pensez que c'est mieux
+[left][info][h2] Pédopsychiatre
+[left][dialogue][p] Non
+[left][dialogue][p] Je pense même qu'on va augmenter
+[left][dialogue][p] pour son bien évidemment
+[left][dialogue][p] aurevoir madame
+
 [right][info][h2] John
 
 [center][info][h2] 9 aoùt 2019
