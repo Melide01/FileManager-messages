@@ -127,6 +127,9 @@ var Atelle = `
 [right][dialogue][p] en sah j'arrive
 [left][dialogue][p] Oui vien stp
 [left][dialogue][p] Je veux te voir
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/70X5ZgZlav9J5hKwWYl1n1?si=69f0bcf2b8884a34
 `;
 
 var MrRedman = `
@@ -139,7 +142,7 @@ var MrRedman = `
 [left][dialogue][p] Bonjour, Désolé nous n'avons plus votre exéat. Cordialement,
 [center][info][h2] En gros allez vous faire foutre quoi
 [left][info][h2] Vous avez reçu 1 message de Maman
-<br>
+<br><br><br>
 [center][info][a] https://open.spotify.com/intl-fr/track/1Wh1P7uxQybHabnFcN73W9?si=67db6d5bf4444504
 `;
 
@@ -156,6 +159,9 @@ var painGo = `
 [left][dialogue][p] hi, just wanted you to know your girlfriend is dead...
 [right][dialogue][p] wait what??
 [cenfer][info][h2] You have been blocked
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/5uwDMPGC9AZjOJq0JhNUmc?si=9600123b96784c66
 `;
 
 var evq = `
@@ -165,6 +171,9 @@ var evq = `
 [left][dialogue][p] C'est juste que comme tu le sais c'est compliqué pour moi mais je tien a toi john énormément
 [right][dialogue][p] J'oublie pas ça et je t'en voudrais jamais que ce soit compliqué pour toi, je suis vraiment heureux de te connaître l'oublie jamais
 [left][dialogue][p] Merci infiniment pour tout
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/4M4VUxW1ALaCLb0paB0ikb?si=dfad2b546ce84f3c
 `;
 
 var thanks = `
@@ -183,6 +192,9 @@ var thanks = `
 [left][dialogue][p] MERCI T TROP GENTIL 💕💕🎀🎀🎀🎀🎀💮💮💮💮💗🌹🌹🌹
 
 [left][dialogue][img] assets/image/coeurcoeur.JPG
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/0wY8BysFyJ8efw9GOoKJsb?si=b471a18f1bc44b15
 `;
 
 var panier = `
@@ -196,6 +208,9 @@ var panier = `
 [right][dialogue][p] on se voit taleur
 [left][info][h2] Vous avez manquer 5 appels de la personne
 [right][dialogue][img] assets/image/huh_cat.jpg
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/4ZFwAMS9GldgRUhbxlrtse?si=33186dfd00044c96
 `;
 
 var faireAvec = `
@@ -261,6 +276,9 @@ var faireAvec = `
 [right][dialogue][p] T'es hônnetement la personne avec qui jaurai un lien très fort malgré moi
 [right][dialogue][p] Tu es formidable
 [right][dialogue][p] J'veux pardonner mon passé, celui avec mes anciens médocs
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/6W9Z63WwZlwhXlpB7H4Mut?si=ac7a8bde42814a57
 `;
 
 var duTemps = `
@@ -281,6 +299,9 @@ var duTemps = `
 [right][dialogue][p] ah
 [right][dialogue][img] assets/image/huh_cat.jpg
 [right][info][h2] je suis bébête
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/0Whw8ITpflKkjrY38jqC2r?si=8c1cd37e78a64abf
 `;
 
 var compPourMe = `
@@ -305,6 +326,9 @@ var compPourMe = `
 [left][dialogue][p] Je t’aime fort 🥹
 
 [left][dialogue][video] assets/video/faite pareil.mp4
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/3jkDwHYgvFiY1yE7CBHZEP?si=0a85628559f14938
 `;
 
 var childClich = `
@@ -343,6 +367,9 @@ var childClich = `
 [right][dialogue][p] have a nice daaaay <33
 [right][dialogue][p] thankuuuuuuuuuuuuu
 [left][dialogue][p] i love you
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/1UHvFG8yFL9jdxY27eTvsV?si=77e0718bd251459d
 `;
 
 var reveurToujours = `
@@ -391,6 +418,7 @@ var reveurToujours = `
 <br><br><br>
 [center][dialogue][p] Et aujourd'hui, 2024, on sort Photo Souvenir
 <br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/7glNOd7sTQrwEruUfbwzPo?si=81c5ae68d5264f55
 `;
 
 var plusEspace = `
@@ -430,6 +458,9 @@ var plusEspace = `
 [right][dialogue][p] OUI DEPUIS DES ANNÉES J'AI UN ESPACE SATURÉ BAHAHAHAHHAHAHAHAHAH
 [left][dialogue][p] 🤣🤣🤣
 [right][dialogue][p] jv faire un son dessus
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/1LOpwEsKBkYy3RLBxd9XvQ?si=a34d2762620446aa
 `;
 
 var babyKsk = `
@@ -444,6 +475,9 @@ var babyKsk = `
 [left][dialogue][p] Tkt pas jsuis là puis ca fait un moment que c'est compliqué
 [right][dialogue][p] Tkt <3
 [right][info][h2] Vu.
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/7CkPM3YdLaOs187d146FBA?si=53a7906af25e4b91
 `;
 
 var sorcellerie = `
@@ -476,6 +510,9 @@ var sorcellerie = `
 [left][dialogue][p] Don't mind cause it's you
 [right][dialogue][p] good girl
 [left][dialogue][p] THAT'S CHEATING
+
+<br><br><br>
+[center][info][a] https://open.spotify.com/intl-fr/track/7GCSRZzh53VkPL9QeLJv6d?si=42d38e991b724f75
 `;
 
 
